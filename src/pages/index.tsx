@@ -33,6 +33,9 @@ function Home() {
   if (loading) return <h1>Loading...</h1>
 
   const products = data?.getAllProduct?.data
+
+  console.log(products);
+
   if (!products || !products.length) {
     return <p>Not found</p>
   }
